@@ -1,10 +1,20 @@
+secreto = 'purfume'
+digitadas = []
 
-
-l1 = [1, 2, 3]
-l2 = [4, 5, 6]
-print(l1)
-print(l2)
-
-l3 = l1 + l2
-
-print(l3)
+while True:
+    letra = input('Digite uma letra: ')
+    if len(letra) > 1:
+        print('Digite apenas uma letra.')
+        continue
+    
+    digitadas.append(letra)
+    
+    if letra in secreto:
+        print(F'\nA letra {letra} existe na palavra secreta.')
+    else:
+        print(f'\nA letra {letra} NÃO existe na palavra secreta.')
+        digitadas.pop()
+        
+    for k in digitadas:
+        print(k, end='-')
+        
