@@ -1,2 +1,2 @@
-# Exercicios Python
+# My First contact with programming
  
